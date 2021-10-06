@@ -11,4 +11,13 @@ y_acc=0;
 z_acc=0;
 //=-world_z/zoom/2;
 z=10;
+
+trailAlpha=0.2;
+trailMaxPoints=20;
+trailThickness=3;
+trailActive=true;
+trailSkip=7;
+addTrail=0;
+trailPoints=array_create(0);
+
 max_spd=1;

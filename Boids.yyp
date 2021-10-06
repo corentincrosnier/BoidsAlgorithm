@@ -9,7 +9,7 @@
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},"order":0,},
     {"id":{"name":"vertex_add_point","path":"scripts/vertex_add_point/vertex_add_point.yy",},"order":0,},
     {"id":{"name":"ts_BG","path":"tilesets/ts_BG/ts_BG.yy",},"order":0,},
-    {"id":{"name":"Walls","path":"objects/Walls/Walls.yy",},"order":4,},
+    {"id":{"name":"Wall","path":"objects/Wall/Wall.yy",},"order":4,},
     {"id":{"name":"magnitude_3d","path":"scripts/magnitude_3d/magnitude_3d.yy",},"order":1,},
     {"id":{"name":"GlobalController","path":"objects/GlobalController/GlobalController.yy",},"order":2,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},

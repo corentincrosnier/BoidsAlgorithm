@@ -28,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Walls",
+  "name": "Wall",
   "tags": [],
   "resourceType": "GMObject",
 }

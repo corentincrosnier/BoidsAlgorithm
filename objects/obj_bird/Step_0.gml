@@ -6,6 +6,14 @@ if(x<0 || y<0 || z<0 || x>world_w/zoom || y>world_h/zoom || z>world_z/zoom){
 	instance_destroy(self);
 }
 
+if(trailActive && addTrail==0){
+	array_push(trailPoints,[x,y,z]);
+	if(array_length(trailPoints)>trailMaxPoints){
+		array_delete(trailPoints,0,1);
+	}
+}
+addTrail=(addTrail+1)%trailSkip;
+
 var dt=delta_time/1000000;
 
 var barycenter_x=0;
@@ -130,5 +138,7 @@ z+=z_spd;
 x_acc=0;
 y_acc=0;
 z_acc=0;
+
+
 
 //image_angle=point_direction(0,0,x_spd,y_spd);
