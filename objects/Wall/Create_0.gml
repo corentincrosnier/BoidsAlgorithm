@@ -11,6 +11,7 @@ alphaRight=0.1;
 alphaFront=0.05;
 drawFront=false;
 drawn=false;
+flat=false;
 
 color=c_olive;
 alpha=0.3;

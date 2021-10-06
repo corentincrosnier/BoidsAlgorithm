@@ -6,7 +6,7 @@ draw_set_color(c_aqua);
 draw_circle(x/world_w*room_width,y/world_h*room_height,5,false);
 */
 
-var _x=x/(world_w/zoom)*room_width;
+var _x=x/(world_w/zoom)*room_height+(room_width-room_height)/2;
 var _y=y/(world_h/zoom)*room_height;
 var _z=z/(world_z/zoom)*room_height;
 
@@ -34,7 +34,7 @@ if(trailActive){
 vertex_begin(vBuffer,vFormat);
 var i=0;
 for(i=0;i<array_length(trailPoints);i++){
-	vertex_add_point(vBuffer,trailPoints[i][0]/(world_w/zoom)*room_width, trailPoints[i][1]/(world_h/zoom)*room_height, -trailPoints[i][2]/(world_z/zoom)*room_height,		0,0,1,		0,0,	make_color_hsv(i*255/trailMaxPoints,150,255), trailAlpha);
+	vertex_add_point(vBuffer,trailPoints[i][0]/(world_w/zoom)*room_height+(room_width-room_height)/2, trailPoints[i][1]/(world_h/zoom)*room_height, -trailPoints[i][2]/(world_z/zoom)*room_height,		0,0,1,		0,0,	make_color_hsv(i*255/trailMaxPoints,150,255), trailAlpha);
 	/*if(i>0){
 		vertex_add_point(vBuffer,trailPoints[i-1][0]/(world_w/zoom)*room_width, trailPoints[i-1][1]/(world_h/zoom)*room_height, -trailPoints[i-1][2]/(world_z/zoom)*room_height,		0,0,1,		0,0,	make_color_hsv(i*255/trailMaxPoints,150,255), trailAlpha);
 	}*/

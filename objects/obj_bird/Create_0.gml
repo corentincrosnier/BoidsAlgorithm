@@ -12,7 +12,7 @@ z_acc=0;
 //=-world_z/zoom/2;
 z=10;
 
-trailAlpha=0.2;
+trailAlpha=0.5;
 trailMaxPoints=20;
 trailThickness=3;
 trailActive=true;

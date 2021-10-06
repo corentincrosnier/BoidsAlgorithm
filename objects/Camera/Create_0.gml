@@ -33,7 +33,7 @@ Y=room_height*3/2;
 Z=-room_height*2/3;
 */
 
-/*
+
 with(instance_create_layer(0,0,"Instances",Wall)){
 	drawn=true;
 	x1=0;
@@ -68,11 +68,24 @@ with(instance_create_layer(0,0,"Instances",Wall)){
 	drawn=true;
 	x1=0;
 	y1=world_h;
-	z1=world_z;
+	z1=0;
 	x2=world_w;
 	y2=world_h;
 	z2=world_z;
 	ny=1;
 }
-*/
+with(instance_create_layer(0,0,"Instances",Wall)){
+	drawn=true;
+	color=c_navy;
+	x1=0;
+	y1=0;
+	z1=0;
+	x2=world_w;
+	y2=world_h;
+	z2=0;
+	nz=1;
+	flat=true;
+}
+
+
 
