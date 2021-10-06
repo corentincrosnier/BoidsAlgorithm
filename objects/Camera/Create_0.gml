@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+X=room_width/2;
+Y=room_height*3/2;
+Z=-room_height;
+
 gpu_set_ztestenable(true);
 gpu_set_zwriteenable(true);
 
@@ -45,7 +49,3 @@ vertex_normal(vBuffer,0,0,1);
 vertex_texcoord(vBuffer,0,0);
 vertex_color(vBuffer,c_white,1);
 */
-
-X=0;
-Y=0;
-Z=-400;
