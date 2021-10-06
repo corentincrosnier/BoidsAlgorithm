@@ -16,5 +16,7 @@ for(i=0;i<flockSize;i++){
 	
 	with(instance_create_depth(mouse_x/room_width*(world_w/zoom)+xx,mouse_y/room_height*(world_h/zoom)+yy,0,obj_bird)){
 		z=world_z/zoom/2+zz;
+		//z=10;
 	}
+	nbBirds++;
 }

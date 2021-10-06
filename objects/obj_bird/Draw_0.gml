@@ -12,16 +12,20 @@ var _z=z/(world_z/zoom)*room_height;
 
 vertex_begin(vBuffer,vFormat);
 vertex_add_point(vBuffer,_x,_y,-_z,		0,0,1,		0,0,	c_aqua,1);
-vertex_add_point(vBuffer,_x-cos(degtorad(point_direction(0,0,x_spd,y_spd)))*10+10,_y+sin(degtorad(point_direction(0,0,x_spd,y_spd)))*10,-_z,	0,0,1,		0,0,	c_navy,1);
-vertex_add_point(vBuffer,_x-cos(degtorad(point_direction(0,0,x_spd,y_spd)))*10-10,_y+sin(degtorad(point_direction(0,0,x_spd,y_spd)))*10,-_z,	0,0,1,		0,0,	c_navy,1);
+vertex_add_point(vBuffer,_x-cos(degtorad(point_direction(0,0,x_spd,y_spd)))*10+7,_y+sin(degtorad(point_direction(0,0,x_spd,y_spd)))*10,-_z,	0,0,1,		0,0,	c_navy,1);
+vertex_add_point(vBuffer,_x-cos(degtorad(point_direction(0,0,x_spd,y_spd)))*10-7,_y+sin(degtorad(point_direction(0,0,x_spd,y_spd)))*10,-_z,	0,0,1,		0,0,	c_navy,1);
 
 vertex_add_point(vBuffer,_x,_y,-_z,		0,0,1,		0,0,	c_aqua,1);
-vertex_add_point(vBuffer,_x-cos(degtorad(point_direction(0,0,x_spd,y_spd)))*10+10,_y+sin(degtorad(point_direction(0,0,x_spd,y_spd)))*10,-_z,	0,0,1,		0,0,	c_navy,1);
+vertex_add_point(vBuffer,_x-cos(degtorad(point_direction(0,0,x_spd,y_spd)))*10+7,_y+sin(degtorad(point_direction(0,0,x_spd,y_spd)))*10,-_z,	0,0,1,		0,0,	c_navy,1);
 vertex_add_point(vBuffer,_x-cos(degtorad(point_direction(0,0,x_spd,y_spd)))*10,_y+sin(degtorad(point_direction(0,0,x_spd,y_spd)))*10,-_z+7,	0,0,1,		0,0,	c_navy,1);
 
 vertex_add_point(vBuffer,_x,_y,-_z,		0,0,1,		0,0,	c_aqua,1);
 vertex_add_point(vBuffer,_x-cos(degtorad(point_direction(0,0,x_spd,y_spd)))*10,_y+sin(degtorad(point_direction(0,0,x_spd,y_spd)))*10,-_z+7,	0,0,1,		0,0,	c_navy,1);
-vertex_add_point(vBuffer,_x-cos(degtorad(point_direction(0,0,x_spd,y_spd)))*10-10,_y+sin(degtorad(point_direction(0,0,x_spd,y_spd)))*10,-_z,	0,0,1,		0,0,	c_navy,1);
+vertex_add_point(vBuffer,_x-cos(degtorad(point_direction(0,0,x_spd,y_spd)))*10-7,_y+sin(degtorad(point_direction(0,0,x_spd,y_spd)))*10,-_z,	0,0,1,		0,0,	c_navy,1);
+
+vertex_add_point(vBuffer,_x-cos(degtorad(point_direction(0,0,x_spd,y_spd)))*10+7,_y+sin(degtorad(point_direction(0,0,x_spd,y_spd)))*10,-_z,	0,0,1,		0,0,	c_navy,1);
+vertex_add_point(vBuffer,_x-cos(degtorad(point_direction(0,0,x_spd,y_spd)))*10,_y+sin(degtorad(point_direction(0,0,x_spd,y_spd)))*10,-_z+7,	0,0,1,		0,0,	c_navy,1);
+vertex_add_point(vBuffer,_x-cos(degtorad(point_direction(0,0,x_spd,y_spd)))*10-7,_y+sin(degtorad(point_direction(0,0,x_spd,y_spd)))*10,-_z,	0,0,1,		0,0,	c_navy,1);
 vertex_end(vBuffer);
 
 vertex_submit(vBuffer,pr_trianglelist,-1);

@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-maneuverability=random_range(0.4,1);
+//maneuverability=random_range(0.4,1);
+maneuverability=1;
 x_spd=0;
 y_spd=0;
 z_spd=0;

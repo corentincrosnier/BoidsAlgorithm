@@ -11,6 +11,8 @@ world_z=90;
 globalvar zoom;
 zoom=1;
 
+randomize();
+
 zoomFactor=1;
 minZoom=0.01;
 maxZoom=10;
