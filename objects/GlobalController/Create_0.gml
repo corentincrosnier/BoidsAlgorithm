@@ -3,8 +3,10 @@
 
 globalvar world_w;
 globalvar world_h;
+globalvar world_z;
 world_w=160;
 world_h=90;
+world_z=90;
 
 globalvar zoom;
 zoom=1;
